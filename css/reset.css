@@ -61,3 +61,15 @@ a {
   text-decoration: none;
   color: #000000;
 }
+
+/* Disable elements lightblue highlighting */
+
+input,
+textarea,
+button,
+select,
+label,
+div,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
