@@ -335,6 +335,12 @@ body {
   padding: 2.7rem 0;
 }
 
+.header__language-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Nav */
 
 .nav {
@@ -1286,7 +1292,7 @@ body {
     margin-left: 11rem;
   }
 
-  .header__language {
+  .header__language-wrapper {
     order: 1;
   }
 
