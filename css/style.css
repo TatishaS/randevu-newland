@@ -66,11 +66,7 @@
 
 :root {
   --contentMain: #000000; /* Цвет шрифта по умолчанию */
-  --contentSecondary: #7c7778;
-  --contentDop: #afacac;
-  --contentLight: #ede8e8;
-  --contentFocused: #151414;
-  --backgroundExtraLight: #f7f5f5;
+
   --backgroundMain: #ffffff; /* Цвет фона по умолчанию */
   --backgroundSecondary: #f8f8f8; /* Светло-серый фон */
   --backgroundGrey: #494949;
@@ -208,23 +204,8 @@ body {
   -webkit-background-clip: text;
   background-clip: padding-box; /* !importanté */
   -webkit-background-clip: padding-box;
-  border: 1px solid transparent; /* !importanté */
+  border: 1px solid var(--accentMain); /* !importanté */
   transition: all 0.5s ease;
-}
-
-.button.button--outlined::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  margin: -1px; /* !importanté */
-  border-radius: inherit; /* !importanté */
-  background: linear-gradient(132deg, #ff6a8f 0%, #ff6276 49.48%, #f53838 100%);
-  transition: all 0.5s ease;
-  opacity: 1;
 }
 
 .button.button--outlined:hover,
@@ -1193,14 +1174,6 @@ body {
 
 .button.button--outlined.footer__btn--signin span {
   color: var(--backgroundMain);
-}
-
-.footer .button.button--outlined::before {
-  //margin: -1px;
-  top: -1px;
-  right: -1px;
-  left: -1px;
-  bottom: -1px;
 }
 
 .footer__btn--signup {
