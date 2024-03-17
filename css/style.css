@@ -596,22 +596,6 @@ body {
   cursor: pointer;
 }
 
-.menu__listlink::after {
-  position: absolute;
-  content: '';
-  display: block;
-  height: 3px;
-  width: 0;
-  left: 0;
-  bottom: -1rem;
-  background: linear-gradient(132deg, #ff6a8f 0%, #ff6276 49.48%, #f53838 100%);
-  transition: 0.3s;
-}
-
-.menu__listlink:hover::after {
-  width: 100%;
-}
-
 .menu__list-itemlink {
   display: flex;
 }
@@ -640,7 +624,8 @@ body {
 .menu__list-btns.active {
   display: block;
 }
-/* INTRO */
+
+/* Section INTRO */
 
 .intro {
   padding-top: 11.2rem;
@@ -991,6 +976,8 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* Section FEATURES */
+
 .features {
   padding: 5.8rem 0 3.8rem;
   background-color: var(--backgroundSecondary);
@@ -1067,6 +1054,8 @@ body {
   padding-right: 2rem;
 }
 
+/* Section TRY  */
+
 .try {
   padding: 4.8rem 0;
 }
@@ -1110,7 +1099,7 @@ body {
   min-width: 11.2rem;
 }
 
-/* Section Signup */
+/* Section SIGNUP */
 
 .signup {
   padding: 3.2rem 0;
@@ -1166,6 +1155,8 @@ body {
   min-width: 13.4rem;
 }
 
+/* Footer */
+
 .footer {
   position: relative;
   background-color: var(--backgroundGrey);
@@ -1194,11 +1185,6 @@ body {
 .footer__btn-wrapper {
   padding: 0.2rem;
 }
-
-/* .button.button--outlined.footer__btn--signin {
-  background: var(--backgroundGrey);
-  padding: 0.9rem 1.5rem;
-} */
 
 .footer .button.button--outlined {
   background: var(--backgroundGrey);
@@ -1330,11 +1316,11 @@ body {
   .header__language {
     order: 1;
   }
-  /*  .menu__mobilebtns--wrapper {
-    display: none;
 
-    order: 3;
-  } */
+  .language-select.language-select--white .language-select__list-wrapper {
+    margin-top: 1rem;
+    bottom: auto;
+  }
 
   .menu__burger {
     display: none;
@@ -1389,6 +1375,27 @@ body {
   .menu__listlink {
     font-size: 1.7rem;
     padding: 0;
+  }
+
+  .menu__listlink::after {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -1rem;
+    background: linear-gradient(
+      132deg,
+      #ff6a8f 0%,
+      #ff6276 49.48%,
+      #f53838 100%
+    );
+    transition: 0.3s;
+  }
+
+  .menu__listlink:hover::after {
+    width: 100%;
   }
 
   .intro {
@@ -1754,6 +1761,10 @@ body {
     height: 13.8rem;
     bottom: 0rem;
     right: -13.3rem;
+  }
+
+  .footer {
+    padding: 1rem 0 8rem;
   }
 
   .footer__nav {
