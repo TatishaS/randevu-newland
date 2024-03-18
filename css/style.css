@@ -630,6 +630,7 @@ body {
 }
 
 .intro__description {
+  max-width: 54rem;
   font-family: 'Circe Rounded Regular 3', 'Arial', sans-serif;
   font-size: 4.5rem;
   line-height: 4.5rem;
