@@ -2,68 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap');
 
-/* FONTS */
-
-/* @font-face {
-  font-weight: 400;
-  font-family: 'Circe Rounded Regular';
-  font-style: normal;
-
-  font-display: swap;
-  src: url('../fonts/CirceRounded-Regular.woff2') format('woff2'),
-    url('../fonts/CirceRounded-Regular.woff') format('woff');
-}
-
-@font-face {
-  font-weight: 400;
-  font-family: 'Circe Rounded Regular 3';
-  font-style: normal;
-
-  font-display: swap;
-  src: url('../fonts/CirceRounded-Regular3.woff2') format('woff2'),
-    url('../fonts/CirceRounded-Regular3.woff') format('woff');
-}
-
-@font-face {
-  font-weight: 400;
-  font-family: 'Circe Rounded Regular 4';
-  font-style: normal;
-
-  font-display: swap;
-  src: url('../fonts/CirceRounded-Regular4.woff2') format('woff2'),
-    url('../fonts/CirceRounded-Regular4.woff') format('woff');
-}
-
-@font-face {
-  font-weight: 400;
-  font-family: 'Circe Rounded Regular 5';
-  font-style: normal;
-
-  font-display: swap;
-  src: url('../fonts/CirceRounded-Regular5.woff2') format('woff2'),
-    url('../fonts/CirceRounded-Regular5.woff') format('woff');
-}
-
-@font-face {
-  font-weight: 700;
-  font-family: 'Circe Rounded Bold';
-  font-style: normal;
-
-  font-display: swap;
-  src: url('../fonts/CirceRounded-Bold.woff2') format('woff2'),
-    url('../fonts/CirceRounded-Bold.woff') format('woff');
-}
-
-@font-face {
-  font-weight: 900;
-  font-family: 'Circe Rounded Extra Bold';
-  font-style: normal;
-
-  font-display: swap;
-  src: url('../fonts/CirceRounded-ExtraBold.woff2') format('woff2'),
-    url('../fonts/CirceRounded-ExtraBold.woff') format('woff');
-} */
-
 /* GLOBAL */
 
 :root {
@@ -188,7 +126,6 @@ body {
   align-items: center;
   justify-content: center;
   background: var(--backgroundMain);
-  //font-family: 'Circe Rounded Bold', 'Arial', sans-serif;
   font-weight: 700;
   padding: 0.8rem 1.5rem;
   border-radius: 1rem;
@@ -256,7 +193,6 @@ body {
 .button.button--glow,
 .button.button--glowpink {
   position: relative;
-  //font-family: 'Circe Rounded Regular 3', 'Arial', sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 1.8rem;
@@ -579,7 +515,6 @@ body {
   display: block;
   color: var(--contentMain);
   font-size: 2.5rem;
-  //font-family: 'Circe Rounded Bold', 'Arial', sans-serif;
   font-weight: 700;
   letter-spacing: 0.03em;
   padding: 1.6rem;
@@ -634,11 +569,10 @@ body {
 }
 
 .intro__description {
-  max-width: 60rem;
-  //font-family: 'Circe Rounded Regular 3', 'Arial', sans-serif;
+  max-width: 56rem;
+
   font-weight: 900;
-  //font-size: 4.5rem;
-  //line-height: 4.5rem;
+
   font-size: 4rem;
   line-height: 4.8rem;
   letter-spacing: 0.03em;
@@ -734,7 +668,6 @@ body {
 }
 
 .target-card__title {
-  //font-family: 'Circe Rounded Bold', 'Arial', sans-serif;
   font-weight: 700;
   font-size: 1.8rem;
   line-height: 2.7rem;
@@ -1022,7 +955,7 @@ body {
 
   align-items: center;
   justify-content: center;
-  //font-family: 'Circe Rounded Extra Bold', 'Arial', sans-serif;
+
   font-weight: 900;
   font-size: 1.4rem;
   text-transform: uppercase;
