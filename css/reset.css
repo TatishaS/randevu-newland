@@ -62,6 +62,15 @@ a {
   color: #000000;
 }
 
+/* Disable inputs autofill */
+
+input::-webkit-contacts-auto-fill-button,
+input::-webkit-credentials-auto-fill-button {
+  visibility: hidden;
+  position: absolute;
+  right: 0;
+}
+
 /* Disable elements lightblue highlighting */
 
 input,
@@ -72,4 +81,39 @@ label,
 div,
 a {
   -webkit-tap-highlight-color: transparent;
+}
+
+/* Disable zoom in form fields in iOS*/
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  select,
+  select:focus,
+  textarea,
+  textarea:focus,
+  input,
+  input:focus {
+    font-size: 16px;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  select,
+  select:focus,
+  textarea,
+  textarea:focus,
+  input,
+  input:focus {
+    font-size: 16px;
+  }
+}
+
+/* Delete arrows in input type="number */
+
+input[type='number'] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
